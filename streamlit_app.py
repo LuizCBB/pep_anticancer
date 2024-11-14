@@ -297,7 +297,7 @@ with guias[1]:
             
             st.write("\n\n")
             st.write("Melhores sequências mutantes encontradas:")
-            result = df.loc[ df['Probabilidade'] == max(probabilidades)].loc[ df['Classe predita'] == "Antibiofilme"]
+            result = df.loc[ df['Probabilidade'] == max(probabilidades)].loc[ df['Classe predita'] == "Anticâncer"]
             st.write(result)
         
         with st.expander(":blue[**Resultados da varredurra completa**]"):
@@ -305,8 +305,8 @@ with guias[1]:
         
 
      
-    example_m = """>2C-4
-RWRWRWF
+    example_m = """>PHub_10
+VNWKKVLGKIIKVAK
     """
 
 
