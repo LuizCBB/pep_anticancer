@@ -83,7 +83,7 @@ with open("melhor_modelo_SVM_k1.pkl", 'rb') as f:
     model = pickle.load(f)
 f.close()
 
-labels_model = ['Não antibiofilme', 'Antibiofilme'] 
+labels_model = ['Não anticâncer', 'Anticâncer'] 
  
 st.markdown("""
     <style>
@@ -98,12 +98,12 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True) 
  
-st.header('Predição e otimização de peptídeos antibiofilme bacterianos')
-st.markdown("""<p>Na aba "Classificador" é possível avaliar se peptídeos tem potencial ação antibiofilme. A ferramenta
+st.header('Predição e otimização de peptídeos anticâncer')
+st.markdown("""<p>Na aba "Classificador" é possível avaliar se peptídeos tem potencial ação anticâncer. A ferramenta
  pode receber uma ou mais sequências peptídicas em formato FASTA. </p>
- <p>Na aba "Peptídeos mutantes" a ferramenta pode ser usada para prever a atividade antibiofilme de um único peptídeo e para gerar seus análogos com 
+ <p>Na aba "Peptídeos mutantes" a ferramenta pode ser usada para prever a atividade anticâncer de um único peptídeo e para gerar seus análogos com 
  sucessivas substituições de aminoácidos em cada posição. Esse recurso ajuda o usuário a selecionar os peptídeos mutantes, em relação ao peptídeo original, que podem
- ter uma probabilidade mais alta de apresentar atividade antibiofilme.</p>
+ ter uma probabilidade mais alta de apresentar atividade anticâncer.</p>
  """, unsafe_allow_html=True) 
 
 
@@ -180,20 +180,24 @@ with guias[0]:
         
 
      
-    example = """>QSP_1
-NSPNIFGQWM
->QSP_2
-SPNIFGQWM
->QSP_3
-ADLPFEF
->QSP_4
-AGTKPQGKPASNLVECVFSLFKKCN
->BMAP-27 (Antibiofilme)
-GRFKRFRKKFKKLFKKLSPVIPLLHL
->BMAP-28 (Antibiofilme)
-GGLRSLGRKILRAWKKYGPIIVPIIRI
->SMAP-29 (Antibiofilme)
-RGLRRLGRKIAHGVKKYGPTVLRIIRIA
+    example = """>peptide_nm_3 (não anticâncer)
+KIPVVAAIHGACLGGGLELALACHQRV
+>peptide_nm_6 (não anticâncer)
+VVNLWALHHNEKEWQQPDLFMPERFLDP
+>peptide_nm_10 (não anticâncer)
+TCSKKKADRKSF
+>peptide_nm_13 (não anticâncer)
+FEQTGGPDLTTGSGKRTKSDRVEHKHASQ
+>PHub_1 (anticâncer)
+GLWSKIKEVGKEAAKAAAKAAGKAALGAVSEAV
+>PHub_10 (anticâncer)
+VNWKKVLGKIIKVAK
+>PHub_100 (anticâncer)
+KLKNFAKGVAQSLLNKASCKLSGQC
+>PHub_101 (anticâncer)
+CKLKNFAKGVAQSLLNKASKLSGQC
+>PHub_102 (anticâncer)
+GLFDVVKGVLKGVGKNVAGSLLEQLKCKLSGGC
 
     """
 
