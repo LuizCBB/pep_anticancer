@@ -184,12 +184,8 @@ with guias[0]:
 KIPVVAAIHGACLGGGLELALACHQRV
 >peptide_nm_6 (não anticâncer)
 VVNLWALHHNEKEWQQPDLFMPERFLDP
->peptide_nm_10 (não anticâncer)
-TCSKKKADRKSF
 >peptide_nm_13 (não anticâncer)
 FEQTGGPDLTTGSGKRTKSDRVEHKHASQ
->PHub_1 (anticâncer)
-GLWSKIKEVGKEAAKAAAKAAGKAALGAVSEAV
 >PHub_10 (anticâncer)
 VNWKKVLGKIIKVAK
 >PHub_100 (anticâncer)
